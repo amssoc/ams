@@ -311,7 +311,6 @@ footer {
     overflow: hidden;
     border-radius: 12px;
 }
-
 .gallery-item img {
     width: 100%;
     height: 260px;
@@ -322,3 +321,52 @@ footer {
 .gallery-item img:hover {
     transform: scale(1.08);
 }
+
+/* ===============================
+   RIGHT FIXED INFO STRIP
+   =============================== */
+
+.right-strip {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    background: #1e293b;
+    color: white;
+    padding: 14px 12px;
+    border-radius: 12px 0 0 12px;
+    width: 150px;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: -6px 6px 18px rgba(0,0,0,0.25);
+}
+
+.right-strip .datetime p {
+    font-size: 14px;
+    margin: 6px 0;
+    font-weight: 500;
+}
+
+.contact-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 10px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Hide strip on mobile */
+@media (max-width: 768px) {
+    .right-strip {
+        display: none;
+    }
+}
+
